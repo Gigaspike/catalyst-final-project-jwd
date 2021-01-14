@@ -17,3 +17,14 @@
 
 **Assessment**
 In each task you will be assessed by the instructors on the “Assessment Criteria” in this rubric: https://docs.google.com/spreadsheets/d/1pKK9KCnpraEcL7FQjxeMVeDWfjbypYRcSrXCyAVPtHo/edit?usp=sharing
+
+** final-project1 **
+This will be the work for final project in Generations.
+
+The collab will include:
+
+Jermaine Dahilig, Salahuddin Majed, Syahin Hussein Ali, Buddy Burlison.
+
+our TA for this project will be:
+
+Kedrick
