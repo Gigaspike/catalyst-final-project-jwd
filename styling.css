@@ -1,6 +1,24 @@
 header h1{
-
+    position: absolute;
     color:rgb(68, 173, 173);
+    bottom: 2rem;
+    left: 1rem;
+
+}
+
+header {
+display: inline-table;
+
+}
+
+
+/* this is for syling the image in header */
+header img{
+   
+}
+
+.img {
+    
 }
 
 body{
@@ -21,5 +39,5 @@ h1{
 }
 
 .intro{
-
+ 
 }
