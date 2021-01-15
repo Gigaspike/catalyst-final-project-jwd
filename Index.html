@@ -35,33 +35,40 @@
 
     <!-- input container  -->
     <div class="container">
+
       <div class="row">
         <div class="col">
+          <!-- form element start -->
+          <form action="task">
           <div class="row">
-            <p>row 1</p>
+            <!--<p>Input fields for asigned individual and task name</p> -->
+          <input type="text" id="taskAsign" name="taskAsign" value="Asign task to:"><p></p>
+          <input type="text" id="taskName" name="taskName" value="Name the task:">
 
           </div>
+          
 
-          <form action="/action_page.php">
-            <label for="taskAsign">Asign task to:</label><br>
-            <input type="text" id="taskAsign" name="taskAsign" value="Asign name here!"><br>
-            <label for="taskName">Name the task:</label><br>
-            <input type="text" id="taskName" name="taskName" value="Task to do"><br><br>
-            <input type="submit" value="Submit">
-          </form> 
-
-          <div class="row">
-            <p>row 2</p>
-
+            
+            
+         
+          
+          <div class="row" style="padding-top: 10px;">
+            <div class="col">
+            <!-- <p>Task description and Date. </p> -->
+            <input type="text" id="taskDetail" name="taskDetail" value="Details of task Here." size="60">
+            <label for="taskDate">Due by:</label>
+  <input type="date" id="taskDate" name="taskDate">
+            </div>
           </div>
 
+          <input type="submit" value="Submit">
           <!-- button goes here -->
-
+            </form> 
+            <!-- end form element -->
         </div>
         <!-- end col -->
       </div>
       <!-- end row -->
-
     </div>
     <!-- end container div -->
 
