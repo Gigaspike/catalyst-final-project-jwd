@@ -12,24 +12,31 @@
     <!-- Tie into Css document -->
     <link rel="stylesheet" href="styling.css">
     
-    <title>To do organizer list.</title>
+    <title>To do organizer lists.</title>
   </head>
   <body>
+  
+
 
     <header>
     <!-- Container for top of page -->
-    <div class="container">
+    <div class="container d-flex align-items-center h-100">
       <div class="row">
         <div class="col-8 intro">
-<img class="img" src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
-          
-    <h1>To do organizer.</h1>
-    <h4>This is a to do list to organize tasks:</h4> 
+        <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/11975/images/GuirH34R6DGYOwgd9jqw_Screen_Shot_2019-02-14_at_8.37.35_PM.png" class="img-fluid" alt="Responsive Image" />
+        <h1 class="text-center bg-success lead">My To-Do-List</h1>
+
         </div>
         <!-- close of column inside of header -->
       </div>
       <!-- close of row inside of header -->
     </div>
+
+    <!-- list of task -->
+    <div class="col-sm-8 active">
+      <ol id="mylist" class="list-group">
+        <li class="list-group-item active disabled text-center">My Task List</li>
+      </ol>
     <!-- end container for top of page or aka header -->
     </header>
 
@@ -42,27 +49,193 @@
           <form action="task">
           <div class="row">
             <!--<p>Input fields for asigned individual and task name</p> -->
-          <input type="text" id="taskAsign" name="taskAsign" value="Asign task to:">
+          <input type="text" id="taskAsign" name="taskAsign" value="Assign task to:">
           <input type="text" id="taskName" name="taskName" value="Name the task:" style="margin-left: 60px">
-
           </div>
-          
-
-            
-            
-         
-          
-          <div class="row" style="padding-top: 10px;">
+            <div class="row" style="padding-top: 10px;">
             <div class="col-auto">
             <!-- <p>Task description and Date. </p> -->
             <input type="text" id="taskDetail" name="taskDetail" value="Details of task Here." size="60">
             <label for="taskDate">Due by:</label>
-  <input type="date" id="taskDate" name="taskDate">
+            <input type="date" id="taskDate" name="taskDate">
             </div>
           </div>
+            <input type="submit" value="Submit">
+            <br>
+            
+            <!-- First card goes here -->
+            <h4>TO DO TASK</h4>
+            <div class="col-md-4 col-xs-8">
+              <div class="card-deck">
+                  <div class="card border-0">
+                      <div class="card-body align-middle">
+                        <!-- i added checkboxes in each cards. Feel free to eliminate it if it doesnt look nice -->
+                        <select name="todoList" id="todoList-select">
+                          <option value="">--Please select the task below--</option>
+                          <option value="learn C#">Learn C# and create an App</option>
+                          <option value="create project using JavaScript">Create project using JavaScript</option>
+                          <option value="complete the github project">Complete the github project</option>
+                          <option value="Read a book on data structure">Read a Book on Data Structure</option>
+                          <option value="prepare for interview questions">Prepare for Interview Questions</option>
+                      </select>
+                          <p class="card-text text-center">Task 1.</p>
+                          <h6>Create project using JavaScript</h6>
+                          <h6>Due Date : <strong>August 20 2021</strong></h6>
+                
+                          <a href="https://www.w3schools.com/cs/" class="btn btn-primary bg-success">Click here for more resources</a>
 
-          <input type="submit" value="Submit">
+                          <div class="input-group-append">
+                            <!-- add task button -->
+                            <button class="btn btn-outline-info" id="enter" type="button">Add Task</button>
+                          </div>
+
+                          
+                      </div>
+                      <button type="button" class="btn btn-primary">In Progress</button>
+                      <button type="button" class="btn btn-secondary">Done</button>
+                      <button type="button" class="btn btn-success" id="removeAll">Delete</button>
+                      <button type="button" class="btn btn-danger">Overdue</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Second card goes here -->
+          <div class="col-md-4 col-xs-8">
+            <div class="card-deck">
+                <div class="card border-0">
+                    <div class="card-body align-middle">
+                      <select name="todoList" id="todoList-select">
+                        <option value="">--Please select the task below--</option>
+                        <option value="learn C#">Learn C#</option>
+                        <option value="create project using JavaScript">Create project using JavaScript</option>
+                        <option value="complete the github project">Complete the github project</option>
+                        <option value="Read a book on data structure">Read a Book on Data Structure</option>
+                        <option value="prepare for interview questions">Prepare for Interview Questions</option>
+                    </select>
+                        <p class="card-text text-center">Task 2.</p>
+                        <h6>Learn C# and create an App</h6>
+                        <h6>Due Date : <strong>October 20 2021</strong></h6>
+              
+                        <a href="https://www.w3schools.com/cs/" class="btn btn-primary bg-success">Click here for more resources</a>
+
+                        <div class="input-group-append">
+                          <!-- add task button -->
+                          <button class="btn btn-outline-info" id="enter" type="button">Add Task</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">In Progress</button>
+                    <button type="button" class="btn btn-secondary">Done</button>
+                    <button type="button" class="btn btn-success" id="removeAll">Delete</button>
+                    <button type="button" class="btn btn-danger">Overdue</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Third card goes here -->
+        <div class="col-md-4 col-xs-8">
+          <div class="card-deck">
+              <div class="card border-0">
+                  <div class="card-body align-middle">
+                    <select name="todoList" id="todoList-select">
+                      <option value="">--Please select the task below--</option>
+                      <option value="learn C#">Learn C#</option>
+                      <option value="create project using JavaScript">Create project using JavaScript</option>
+                      <option value="complete the github project">Complete the github project</option>
+                      <option value="Read a book on data structure">Read a Book on Data Structure</option>
+                      <option value="prepare for interview questions">Prepare for Interview Questions</option>
+                  </select>
+                      <p class="card-text text-center">Task 3.</p>
+                      <h6>Prepare for Interview Questions</h6>
+                      <h6>Due Date : <strong>November 20 2021</strong></h6>
+            
+                      <a href="https://www.w3schools.com/cs/" class="btn btn-primary bg-success">Click here for more resources</a>
+
+                      <div class="input-group-append">
+                        <!-- add task button -->
+                        <button class="btn btn-outline-info" id="enter" type="button">Add Task</button>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">In Progress</button>
+                  <button type="button" class="btn btn-secondary">Done</button>
+                  <button type="button" class="btn btn-success" id="removeAll">Delete</button>
+                  <button type="button" class="btn btn-danger">Overdue</button>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- Fourth card goes here -->
+      <div class="col-md-4 col-xs-8">
+        <div class="card-deck">
+            <div class="card border-0">
+                <div class="card-body align-middle">
+                  <select name="todoList" id="todoList-select">
+                    <option value="">--Please select the task below--</option>
+                    <option value="learn C#">Learn C#</option>
+                    <option value="create project using JavaScript">Create project using JavaScript</option>
+                    <option value="complete the github project">Complete the github project</option>
+                    <option value="Read a book on data structure">Read a Book on Data Structure</option>
+                    <option value="prepare for interview questions">Prepare for Interview Questions</option>
+                </select>
+                    <p class="card-text text-center">Task 4.</p>
+                    <h6>Complete the Github Project</h6>
+                    <h6>Due Date : <strong>December 20 2021</strong></h6>
+          
+                    <a href="https://www.w3schools.com/cs/" class="btn btn-primary bg-success">Click here for more resources</a>
+
+                    <div class="input-group-append">
+                      <!-- add task button -->
+                      <button class="btn btn-outline-info" id="enter" type="button">Add Task</button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">In Progress</button>
+                <button type="button" class="btn btn-secondary">Done</button>
+                <button type="button" class="btn btn-success" id="removeAll">Delete</button>
+                <button type="button" class="btn btn-danger">Overdue</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Second card goes here -->
+    <div class="col-md-4 col-xs-8">
+      <div class="card-deck">
+          <div class="card border-0">
+              <div class="card-body align-middle">
+                <select name="todoList" id="todoList-select">
+                  <option value="">--Please select the task below--</option>
+                  <option value="learn C#">Learn C#</option>
+                  <option value="create project using JavaScript">Create project using JavaScript</option>
+                  <option value="complete the github project">Complete the github project</option>
+                  <option value="Read a book on data structure">Read a Book on Data Structure</option>
+                  <option value="prepare for interview questions">Prepare for Interview Questions</option>
+              </select>
+                  <p class="card-text text-center">Task 5.</p>
+                  <h6>Read a Book on Data Structure</h6>
+                  <h6>Due Date : <strong>January 20 2022</strong></h6>
+        
+                  <a href="https://www.w3schools.com/cs/" class="btn btn-primary bg-success">Click here for more resources</a>
+
+                  <div class="input-group-append">
+                    <!-- add task button -->
+                    <button class="btn btn-outline-info" id="enter" type="button">Add Task</button>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">In Progress</button>
+              <button type="button" class="btn btn-secondary">Done</button>
+              <button type="button" class="btn btn-success" id="removeAll">Delete</button>
+              <button type="button" class="btn btn-danger">Overdue</button>
+          </div>
+      </div>
+  </div>
+
+
+        
+          
+
           <!-- button goes here -->
+          <button class="btn create" aria-label="create new list"></button>
             </form> 
             <!-- end form element -->
         </div>
@@ -81,14 +254,25 @@
 
 
       </ul>
+        <!-- Buttons  -->
+      <!-- <div class="button-stuff">
+
+        <button type="button" class="btn btn-primary">In Progress</button>
+        <button type="button" class="btn btn-secondary">Done</button>
+        <button type="button" class="btn btn-success">Delete</button>
+        <button type="button" class="btn btn-danger">Overdue</button>
+      </div> -->
 
     </div>
 
 
 
 
-
+    <!-- added js file as well -->
     <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
