@@ -1,6 +1,6 @@
 header h1{
     position: absolute;
-    color:rgb(68, 173, 173);
+    color:rgb(20, 22, 22);
     bottom: 2rem;
     left: 1rem;
 
@@ -8,6 +8,7 @@ header h1{
 
 header {
 display: inline-table;
+border: black;
 
 }
 
@@ -22,6 +23,7 @@ header img{
 }
 
 body{
+    background-color: bisque;
 
     
 }
