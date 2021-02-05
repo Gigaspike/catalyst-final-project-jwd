@@ -21,14 +21,14 @@ margin-top: 1px;
 /* this is for the header img */
 .img-fluid{
     display:flex;
-    justify: center;
+    justify-content: center;
 
 }
 
 
-
+/* used to prevent error for blank space. This was for the original center image banner. */
 .img {
-    
+    display: inline-block;
 }
 
 body{
