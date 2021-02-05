@@ -6,6 +6,11 @@ header h1{
 
 }
 
+header{
+    max-width: 1800px;
+    margin: auto;
+}
+
 #mListTag{
 margin-top: 1px;
 
