@@ -12,7 +12,7 @@
     <!-- Tie into Css document -->
     <link rel="stylesheet" href="styling.css">
     <!-- Tie into javascript-->
-    <script type="text/javascript" src="./Scripts/main.js"></script>
+    <script type="text/javascript" src="./Scripts/main.js" defer></script>
     <title>To do organizer lists.</title>
   </head>
   <body>
@@ -46,22 +46,27 @@
 
       <div class="row">
         <div class="col">
+          <!-- Form error element announcer -->
+          <div id='error'></div>
           <!-- form element start -->
-          <form action="task">
+          <form id='form' action="/" method ="GET" onsubmit="return false">
           <div class="row">
             <!--<p>Input fields for asigned individual and task name</p> -->
-          <input type="text" id="taskAsign" name="taskAsign" value="Assign task to:">
-          <input type="text" id="taskName" name="taskName" value="Name the task:" style="margin-left: 60px">
+            <label for='taskAssign'>Assign task to:</label>
+          <input type="text" id="taskAsign" name="taskAsign"  required>
+          <label for='taskNamen'>Name the task:</label>
+          <input type="text" id="taskName" name="taskName" required>
           </div>
             <div class="row" style="padding-top: 10px;">
             <div class="col-auto">
             <!-- <p>Task description and Date. </p> -->
-            <input type="text" id="taskDetail" name="taskDetail" value="Details of task Here." size="60">
+            <label for='taskDetail'>Details of task Here.</label>
+            <input type="text" id="taskDetail" name="taskDetail" size="60" required>
             <label for="taskDate">Due by:</label>
-            <input type="date" id="taskDate" name="taskDate">
+            <input type="date" id="taskDate" name="taskDate" required>
             </div>
           </div>
-            <input type="submit" value="Submit">
+            <input id='fsubmit' type="submit" value="Submit">
             <br>
           </form> 
           <!-- end form element -->
