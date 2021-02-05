@@ -6,6 +6,10 @@ header h1{
 
 }
 
+#Headboard{
+    display: center;
+}
+
 header {
 display: inline-block;
 border: black;
