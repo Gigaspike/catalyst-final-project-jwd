@@ -6,16 +6,9 @@ const status = document.getElementById('status');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error')
 
-form.addEventListener('submit', (e) => {
-let messages = []
-if (name.value === '' || name.value === null){
-    messages.push('Name is required');
-}
-if (messages.length > 0){
-    e.preventDefault();
-    errorElement.innerText = messages.join(', ');
-}
-})
+
+
+
 
 
 
@@ -26,6 +19,18 @@ class Task{
         this.taskDetail = 'ex  Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
         this.taskDate = '01/02/2021';
         this.status = 'assigned';
+    }
+    getstatus(){
+        return this.status;
+    }
+    setstatus(){
+        if (this.status === 'assigned'){
+            this.status = 'In progress';
+        }else if(this.status === 'In progress'){
+            this.status = 'Complete';
+        }else{
+            this.status = 'assigned';
+        }
     }
 }
 
