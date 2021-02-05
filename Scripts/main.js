@@ -35,11 +35,11 @@ class Task{
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
 })
 
 function validFormFieldInput(data){
-
+return console.log('not implemented yet')
 }
 
 
