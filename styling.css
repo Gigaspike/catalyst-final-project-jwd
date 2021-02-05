@@ -9,6 +9,7 @@ header h1{
 header{
     max-width: 1800px;
     margin: auto;
+    display: table;
 }
 
 #mListTag{
