@@ -12,7 +12,7 @@ const errorElement = document.getElementById('error');
 // const setDate = newTaskDate.value;
 //const setstatus = newTaskStatus.value;
 //test area
-console.log('name: ' + name1);
+// console.log('name: ' + name1);
 //class setup for input fields
 // class Task{
 //     constructor(a,b,c,d,e){
