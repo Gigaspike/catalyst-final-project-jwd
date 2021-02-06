@@ -6,20 +6,44 @@ header h1{
 
 }
 
-header {
-display: inline-table;
-border: black;
+header{
+    max-width: 1800px;
+    margin: auto;
+    display: table;
+}
+
+#mListTag{
+margin-top: 1px;
+
 
 }
 
-
-/* this is for syling the image in header */
-header img{
- 
+#error{
+    display: none;
+    color:black;
 }
 
+/* this is for the header img */
+.img-fluid{
+    display:flex;
+    justify-content: center;
+
+}
+form{
+    max-width: 900px;
+}
+
+#x-1{
+    display: none;
+}
+
+#sdate{
+    display: inline-flexbox;
+}
+
+/* used to prevent error for blank space. This was for the original center image banner. */
 .img {
-    
+    display: inline-block;
 }
 
 body{
@@ -28,18 +52,7 @@ body{
     
 }
 
-p{
-
-}
-
-h1{
-
-}
-
-.container{
-
-}
-
-.intro{
- 
+.tasklist {
+    margin-top: 13px;
+    border:13px solid seagreen;
 }

@@ -1,0 +1,11 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "this is for the final project.",
+  "main": "main.js",
+  "author": "Buddy Burlison",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^6.13.8"
+  }
+}
