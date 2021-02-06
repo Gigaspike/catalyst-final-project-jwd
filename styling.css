@@ -30,7 +30,11 @@ margin-top: 1px;
 
 }
 form{
-    max-width: 800px;
+    max-width: 900px;
+}
+
+#sdate{
+    display: inline-flexbox;
 }
 
 /* used to prevent error for blank space. This was for the original center image banner. */
