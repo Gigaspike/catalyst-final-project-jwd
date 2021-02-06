@@ -18,13 +18,20 @@ margin-top: 1px;
 
 }
 
+#error{
+    display: none;
+    color:black;
+}
+
 /* this is for the header img */
 .img-fluid{
     display:flex;
     justify-content: center;
 
 }
-
+form{
+    max-width: 800px;
+}
 
 /* used to prevent error for blank space. This was for the original center image banner. */
 .img {
