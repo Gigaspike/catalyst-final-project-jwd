@@ -6,10 +6,10 @@ const newTaskDate = document.getElementById('taskDate');
 const newForm = document.getElementById('zform');
 const errorElement = document.getElementById('error');
 //variables being applied
-const name1 = newTaskNameInput.value;
-const asigned = newTaskAsigned.value;
-const detail = newTaskDetails.value;
-const setDate = newTaskDate.value;
+// const name1 = newTaskNameInput.value;
+// const asigned = newTaskAsigned.value;
+// const detail = newTaskDetails.value;
+// const setDate = newTaskDate.value;
 //const setstatus = newTaskStatus.value;
 //test area
 console.log('name: ' + name1);
@@ -39,16 +39,16 @@ console.log('name: ' + name1);
 
 newForm.addEventListener('submit', (e) => {
     let messages = [];
-    if(name1 === null|| name1 === ''){
+    if(newTaskNameInput.value === null || newTaskNameInput.value === ''){
         messages.push('A name for the task is required.')
     }
-     if(asigned.value === null|| asigned.value === ''){
+     if(newTaskAsigned.value === null || newTaskAsigned.value === ''){
         messages.push('Assign a someone to the task.')
     }
-     if(detail.value === null|| detail.value === ''){
+     if(newTaskDetails.value === null || newTaskDetails.value === ''){
         messages.push('Please leave a detail description of the task.')
     }
-     if(setDate.value === null|| setDate.value === ''){
+     if(newTaskDate.value === null || newTaskDate.value === ''){
         messages.push('Please select a due date.')
     }
 
