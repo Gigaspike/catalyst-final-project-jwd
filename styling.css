@@ -33,6 +33,10 @@ form{
     max-width: 900px;
 }
 
+#x-1{
+    display: none;
+}
+
 #sdate{
     display: inline-flexbox;
 }
@@ -46,4 +50,9 @@ body{
     background-color: bisque;
 
     
+}
+
+.tasklist {
+    margin-top: 13px;
+    border:13px solid seagreen;
 }
