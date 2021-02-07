@@ -91,3 +91,6 @@ newForm.addEventListener('submit', (e) => {
 // }
 
 
+//start of task 5 here
+const thisTask = new TaskManager();
+console.log(thisTask.tasks);
