@@ -36,7 +36,7 @@ const errorElement = document.getElementById('error');
 //     }
 // }
 
-
+/*This is in place of validFormFieldInput(data)*/
 newForm.addEventListener('submit', (e) => {
     let messages = [];
     if(newTaskNameInput.value === null || newTaskNameInput.value === ''){
@@ -84,8 +84,10 @@ newForm.addEventListener('submit', (e) => {
     
 })
 
-function validFormFieldInput(data){
-return console.log('not implemented yet')
-}
+
+// //task 4 instructions this was not required after i the code above was completed and streamlined.
+// function validFormFieldInput(data){
+// return console.log('not implemented yet')
+// }
 
 
