@@ -1,5 +1,10 @@
 class TaskManager{
-    constructor(a){
+    constructor(currentID,){
         this.tasks = [];
+        this.currentID = 0;
+    }
+
+    addTask(){
+        
     }
 }
