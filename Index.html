@@ -16,8 +16,6 @@
     <title>To do organizer lists.</title>
   </head>
   <body>
-  
-
 
     <header>
     <!-- Container for top of page -->
@@ -25,21 +23,102 @@
       <div class="row">
         <div class="intro">
         <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive Image" />
-        <h1 class="text-center bg-success lead" style='margin-bottom: 50px;'>Bright Morning To-do List.</h1>
-        <ol id="mListTag" class="list-group">
+        <h1 class="text-center bg-success lead" style='margin-bottom: 50px;'>Bright Morning To-do List.</h1></header>
+
+
+
+        <div class="container">
+          <div class="jumbotron page-header">
+            <h2 style="margin:5px">My To Do List</h2>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="title">Description of the Task:</label>
+              <input type="text" id="title" class="form-control" placeholder="Please Describe Your Tasks... ">
+            </div>
+
+            <div class="form-group">
+              <label for="usr">Assign Task To:</label>
+              <input type="text" id="usr" class="form-control" placeholder="Please input the user name...">
+            </div>
+
+
+
+           
+
+
+
+
+
+
+
+            <div class="form-group">
+              <label for="usr">Due Date:</label>
+              <input type="date" id="due-date" class="form-control" placeholder="Due date">
+            </div>
+
+            <div class="row">
+              <div class="col-xs-3 pull-left">
+                <button type="button" class="btn btn-primary" onclick="newElement()">Add Task</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="tasks">
+          <ul id="task-list">
+          </ul>
+        </div>
+        <ul id="pagination" class="pagination pagination-lg"></ul>
+
+
+
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <ol id="mListTag" class="list-group">
         <li class="list-group-item active disabled text-center">My Task List</li>
         </ol>
         </div>
-        <!-- close of column inside of header -->
+        
       </div>
-      <!-- close of row inside of header -->
+      
     </div>
     
+     -->
     
-    <!-- end container for top of page or aka header -->
-    </header>
 
-    <!-- input container  -->
+    
     <div class="container">
       <div class="row">
         <div class="col">

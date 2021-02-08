@@ -44,15 +44,86 @@ form{
 /* used to prevent error for blank space. This was for the original center image banner. */
 .img {
     display: inline-block;
+    border: #085e3a;
 }
 
 body{
-    background-color: bisque;
+    background-color: rgb(221, 196, 127);
 
     
 }
 
 .tasklist {
     margin-top: 13px;
-    border:13px solid seagreen;
+    border:13px solid rgb(95, 75, 209);
 }
+
+
+body {
+    margin: 0;
+    min-width: 250px;
+  }
+  
+  a {
+    display: inline-block;
+  }
+  
+  .tasks {
+    margin: 30px 5px 5px 5px;
+  }
+  
+  .tasks ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tasks ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  
+  .tasks ul li:nth-child(odd) {
+    background: #e2af06;
+  }
+  
+  .tasks ul li:hover {
+    background: rgb(18, 136, 28);
+  }
+  
+  .dropdown-list {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  /* x sign */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  
+  
+  .jumbotron {
+    background-color: #0e8343;
+    text-align: center;
+    color: rgb(32, 42, 133);
+    font-style: italic;
+  }
+    
+
+  .btn-primary,
+  .btn-success {
+    width: 100%;
+    background-color: #085e3a;
+  }
+  
+  .pagination {
+    padding-left: 40px !important;
+    cursor: pointer !important;
+  }
