@@ -86,10 +86,10 @@ newForm.addEventListener('submit', (e) => {
 
 
 // //task 4 instructions this was not required after i the code above was completed and streamlined.
-// function validFormFieldInput(data){
-// return console.log('not implemented yet')
-// }
-
+/* function validFormFieldInput(data){
+return console.log('not implemented yet')
+}
+ */
 
 //start of task 5 here
 const thisTask = new TaskManager();

@@ -1,5 +1,5 @@
 class TaskManager{
-    constructor(){
+    constructor(a){
         this.tasks = [];
     }
 }
