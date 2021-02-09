@@ -6,10 +6,7 @@ const newTaskDate = document.getElementById('taskDate');
 const newForm = document.getElementById('zform');
 const errorElement = document.getElementById('error');
 //variables being applied
-// const name1 = newTaskNameInput.value;
-// const asigned = newTaskAsigned.value;
-// const detail = newTaskDetails.value;
-// const setDate = newTaskDate.value;
+
 //const setstatus = newTaskStatus.value;
 //test area
 // console.log('name: ' + name1);
@@ -38,6 +35,11 @@ const errorElement = document.getElementById('error');
 
 /*This is in place of validFormFieldInput(data)*/
 newForm.addEventListener('submit', (e) => {
+  const name1 = newTaskNameInput.value;
+const asigned = newTaskAsigned.value;
+const detail = newTaskDetails.value;
+const setDate = newTaskDate.value;
+
     let messages = [];
     if(newTaskNameInput.value === null || newTaskNameInput.value === ''){
         messages.push('A name for the task is required.')
@@ -80,6 +82,9 @@ newForm.addEventListener('submit', (e) => {
         console.log('no errors')
         errorElement.style.display = 'none';
         e.preventDefault();
+        //variables being set after click and confirmed not empty
+        thisTask.addTask(name1, detail, asigned, setDate)
+        console.log(thisTask.tasks);
     }
     
 })
@@ -93,4 +98,3 @@ return console.log('not implemented yet')
 
 //start of task 5 here
 const thisTask = new TaskManager();
-console.log(thisTask.tasks);
