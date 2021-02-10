@@ -10,6 +10,7 @@ header{
     max-width: 1800px;
     margin: auto;
     display: table;
+
 }
 
 #mListTag{
@@ -48,11 +49,21 @@ form{
 
 body{
     background-color: bisque;
+    background-image: url("https://i.pinimg.com/originals/53/a5/dc/53a5dc7c225ed38115876a920c96f703.jpg");
 
     
 }
 
 .tasklist {
     margin-top: 13px;
+    border-radius: 1rem;
     border:13px solid seagreen;
+}
+
+.container{
+    background-color: bisque;
+    border-radius: 1rem;
+    border-color: #007bff;
+    border-width: 5px;
+    border-style: solid;
 }
