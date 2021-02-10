@@ -1,4 +1,5 @@
 const createTaskHtml = (insertname, insertdescription, insertassignedto, insertdate, insertstatus) => {
+  const html=`
     <li class="list-group-item">
     <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
         <h5>${insertname}</h5>  <p>${insertstatus}</p>
@@ -10,6 +11,7 @@ const createTaskHtml = (insertname, insertdescription, insertassignedto, insertd
     </div>
     <p>Take out the trash to the front of the house</p>
     </li>
+    `
 }
 
 class TaskManager{
