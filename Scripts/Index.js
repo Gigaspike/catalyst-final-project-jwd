@@ -6,7 +6,8 @@ const newTaskDate = document.getElementById('taskDate');
 const newForm = document.getElementById('zform');
 const errorElement = document.getElementById('error');
 //variables being applied
-
+const thisTask = new TaskManager();
+let taskHtml = createTaskHtml('taco','burrito','sushi','02/04/2020', 'assigned');
 //const setstatus = newTaskStatus.value;
 //test area
 // console.log('name: ' + name1);
@@ -97,5 +98,6 @@ return console.log('not implemented yet')
 }
  */
 
-//start of task 5 here
-const thisTask = new TaskManager();
+console.log(taskHtml);
+
+

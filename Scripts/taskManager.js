@@ -12,6 +12,7 @@ const createTaskHtml = (insertname, insertdescription, insertassignedto, insertd
     <p>Take out the trash to the front of the house</p>
     </li>
     `
+    return html;
 }
 
 class TaskManager{
@@ -23,5 +24,11 @@ class TaskManager{
     addTask(a1,a2, a3, a4){
         this.currentID++;
         this.tasks.push({id: this.currentID, name: a1, description: a2, assignedTo: a3, dueDate: a4, status: 'assigned'});
+    }
+
+    render(){
+        let tasksHtmlList = [];
+        tasksHtmlList.foreach(taskvar);
+        let formattedDate = new Date(dueDate);
     }
 }
