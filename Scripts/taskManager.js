@@ -27,8 +27,10 @@ class TaskManager{
     }
 
     render(){
+        let ctask = this.tasks;
         let tasksHtmlList = [];
         tasksHtmlList.foreach(taskvar);
         let formattedDate = new Date(dueDate);
+        const taskHtml = createTaskHtml(insertname, insertdescription, insertassignedto, formattedDate, insertstatus);
     }
 }
