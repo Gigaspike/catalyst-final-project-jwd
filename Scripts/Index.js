@@ -85,6 +85,7 @@ const setDate = newTaskDate.value;
         //variables being set after click and confirmed not empty
         thisTask.addTask(name1, detail, asigned, setDate)
         console.log(thisTask.tasks);
+        newForm.reset();
     }
     
 })
