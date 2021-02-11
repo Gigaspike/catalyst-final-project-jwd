@@ -43,6 +43,7 @@ class TaskManager{
         });
         let tasksHtml = tasksHtmlList.join('\n');
         document.getElementById('taskslist').innerHTML = tasksHtml;
-        document.getElementsByClassName('tasklist')[0].style.display = 'inline-table';
+        document.getElementsByClassName('tasklist')[0].style.display = 'block';
+        document.getElementById('taskslist').style.display = 'grid';
     }
 }

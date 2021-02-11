@@ -61,21 +61,21 @@ body{
     border:13px solid rgb(139, 46, 123);
 }
 #taskslist {
-
+    max-width: 3fr;
     background-color: bisque;
     margin-top: 13px;
     border-radius: 1rem;
-    border:13px solid seagreen;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-/* #taskelements {
+#taskelements {
+    border:8px solid seagreen;
     max-width: 300px;
     max-height: 400px;
-} */
+}
 
 
 .container{
