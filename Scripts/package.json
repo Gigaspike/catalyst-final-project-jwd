@@ -6,6 +6,7 @@
   "author": "Buddy Burlison",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.29.1",
     "query-string": "^6.13.8"
   }
 }

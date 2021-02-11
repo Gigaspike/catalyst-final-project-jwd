@@ -14,6 +14,7 @@
     <!-- Tie into javascript-->
     <script type="text/javascript" src="./Scripts/taskManager.js" defer></script>
     <script type="text/javascript" src="./Scripts/Index.js" defer></script>
+    <script type="text/javascript" src="./Scripts/moment.js" defer></script>
     <title>Bright mornings Task list.</title>
   </head>
   <body>
@@ -71,21 +72,9 @@
           <!-- end form element -->
             
             <!-- Start of Task lists. -->
-      <ul class='list-group'>
-        <h3 class='tasklist'>Task List:</h3>
-        <div class="col-md-4 col-xs-8 list-group-item" id='x-1'>
-          <div class="card-deck">
-              <div class="card border-0">
-                  <div class="card-body align-self-center">
-                      <h6 id='taskName'class="card-text text-md-center">Task Name Ex.</h6><p id='sDate'>01/02/2020</p>
-                      <p id='taskDetail'>Create project using JavaScript</p>
-                      <p id='assigned'>example name</p>
-                  </div>
-                  <button id ='statusbutton' type="button" class="btn btn-primary">Status</button>
-                  <button type="button" class="btn btn-success" id="removeTask">Delete</button>
-              </div>
-          </div>
-        </div>
+      <h3 class='tasklist'>Task List:</h3>
+      <ul class='list-group' id='taskslist'>
+ <!-- this will be where the divs are placed in html. -->
       </ul>
 <!-- End of task lists. -->
 

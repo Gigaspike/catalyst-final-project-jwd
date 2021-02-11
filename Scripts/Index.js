@@ -7,7 +7,7 @@ const newForm = document.getElementById('zform');
 const errorElement = document.getElementById('error');
 //variables being applied
 const thisTask = new TaskManager();
-let taskHtml = createTaskHtml('taco','burrito','sushi','02/04/2020', 'assigned');
+//let taskHtml = createTaskHtml('taco','burrito','sushi','02/04/2020', 'assigned');
 //const setstatus = newTaskStatus.value;
 //test area
 // console.log('name: ' + name1);
@@ -40,6 +40,7 @@ newForm.addEventListener('submit', (e) => {
 const asigned = newTaskAsigned.value;
 const detail = newTaskDetails.value;
 const setDate = newTaskDate.value;
+const statuses = 'Assigned';
 
     let messages = [];
     if(newTaskNameInput.value === null || newTaskNameInput.value === ''){
@@ -84,7 +85,8 @@ const setDate = newTaskDate.value;
         errorElement.style.display = 'none';
         e.preventDefault();
         //variables being set after click and confirmed not empty
-        thisTask.addTask(name1, detail, asigned, setDate)
+        thisTask.addTask(name1, detail, asigned, setDate, statuses)
+        thisTask.render();
         console.log(thisTask.tasks);
         newForm.reset();
     }
@@ -98,6 +100,6 @@ return console.log('not implemented yet')
 }
  */
 
-console.log(taskHtml);
+//console.log(taskHtml);
 
 
