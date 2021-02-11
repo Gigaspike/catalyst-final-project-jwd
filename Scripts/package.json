@@ -2,7 +2,7 @@
   "name": "finalproject",
   "version": "1.0.0",
   "description": "this is for the final project.",
-  "main": "main.js",
+  "main": "Index.js",
   "author": "Buddy Burlison",
   "license": "ISC",
   "dependencies": {

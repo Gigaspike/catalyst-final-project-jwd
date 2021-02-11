@@ -1,18 +1,18 @@
 const createTaskHtml = (insertname, insertdescription, insertassignedto, insertdate, insertstatus) => {
   const html=`
     <li class="list-group-item" id='taskelements' style='max-width: 300px'>
-        <div class="col-md-auto col-xs-8">
+        <div class="col-sm">
             <div class="card border-0">
-                <div class="card-body">
-                <p class="card-text text-center"><h5>${insertname}</h5></p>
-                <span class="badge badge-primary inline">Status: ${insertstatus}</span>
-                <p>Assigned to:<small>${insertassignedto}</small></p>
+            <h6>Task:</h1>
+                <p class="card-text" style='display: inline-flex;'><h5>${insertname}</h5><span class="badge badge-primary" style='display: inline-flex;'>Status: ${insertstatus}</span></p>
+                <div class="card-body align-center">
+                <p style='border-color: #FCF3CF; border-style: solid'>Assigned to:<br><small>${insertassignedto}</small></p>
                 <h6>${insertdescription}</h6>
                 <h6>Due Date : <strong>${insertdate}</strong></h6>
       
                 
                 </div>
-            <button type="button" class="btn btn-primary">In Progress</button>
+            <button type="button" class="done-button btn btn-primary">Mark As Done</button>
             <button type="button" class="btn btn-success" id="del">Delete</button>
             </div>
         </div>
@@ -44,6 +44,7 @@ class TaskManager{
         let tasksHtml = tasksHtmlList.join('\n');
         document.getElementById('taskslist').innerHTML = tasksHtml;
         document.getElementsByClassName('tasklist')[0].style.display = 'block';
-        document.getElementById('taskslist').style.display = 'grid';
+        document.getElementById('taskslist').style.display = 'flex';
     }
+
 }

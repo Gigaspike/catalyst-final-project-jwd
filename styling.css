@@ -66,15 +66,23 @@ body{
     margin-top: 13px;
     border-radius: 1rem;
     display: none;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* gap: 5px;
+    grid-auto-rows: minmax(100px, auto); */
+}
+#makethisgrid{
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
     grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
+    flex-flow: column wrap;
 }
 
 #taskelements {
     border:8px solid seagreen;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 500px;
+    gap: 5px;
 }
 
 
