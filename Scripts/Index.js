@@ -81,7 +81,6 @@ const statuses = 'Assigned';
             //your code to be executed after 1 second
           }, 2000);
     }else{
-        console.log('no errors')
         errorElement.style.display = 'none';
         e.preventDefault();
         //variables being set after click and confirmed not empty
@@ -89,6 +88,7 @@ const statuses = 'Assigned';
         thisTask.render();
         console.log(thisTask.tasks);
         newForm.reset();
+        console.log('no errors task called and rendered.');
     }
     
 })
